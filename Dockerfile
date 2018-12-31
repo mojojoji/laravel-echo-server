@@ -7,4 +7,4 @@ COPY package.json /app
 RUN npm install
 EXPOSE 6001
 
-CMD ["/echoserver/node_modules/.bin/laravel-echo-server", "start"]
+CMD ["/app/node_modules/.bin/laravel-echo-server", "start"]
