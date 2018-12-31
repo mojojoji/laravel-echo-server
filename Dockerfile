@@ -1,9 +1,9 @@
-FROM node:latest
+FROM node:alpine
 MAINTAINER Joji Augustine "jojimail@gmail.com"
 
-WORKDIR /echoserver
+WORKDIR /app
 
-COPY package.json /echoserver
+COPY package.json /app
 RUN npm install
 EXPOSE 6001
 
